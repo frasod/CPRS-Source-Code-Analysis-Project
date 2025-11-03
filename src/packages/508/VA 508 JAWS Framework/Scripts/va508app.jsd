@@ -1,0 +1,58 @@
+:function AutoStartEvent 
+
+:function HandleCustomWindows
+:Returns int True means speaking was handled.
+:Synopsis process special functions for CPRS
+:Description Can this be in main file and then overriden in site?
+:Param handle/FocusWIndow Focused Window Handle
+
+:function GetHandleFromAddress
+:Returns handle The handle of the child at that adress; 0 if the address is invalid for the parent.
+:Synopsis This utility function walks down the windows hierarchy
+:Description The component ID's vary from compile to compile, so constants aren't much help for identifying the components.  Instead, we use the component's hierarchical position as an address to locate it as a descendant of the form.
+:Param handle/Parent The handle of a window we have already identified
+:Param string/Address A space-separated list of numeral integers indicating the relationships from generation to generation.  Each integer indicates which child to choose from its parent, with 1 being the first child.
+
+:function SiteCodeInitialize
+:Synopsis Placeholder for site customization.
+:Description This code will be run when the USE statement for site specific code is commented out. It is just an empty function call.
+
+:function NewTextEvent
+:Synopsis This event gets overridden when JAWS starts talking too much
+:Description The edit field of TORComboBoxes uses highlighted text to auto-complete what has been typed in so far.  We only want JAWS to say the selected list item.
+
+:script SpeakControlInfo
+:SearchRank 1
+
+
+:script SayWindowsClass
+:SearchRank 1
+:Synopsis For Debugging purposes, speaks the Windows Class of a control in focus
+:Description For Debugging purposes, speaks the Windows Class of a control in focus
+
+:script SayRealWindowClass
+:SearchRank 1
+:Synopsis For Debugging purposes, speaks the class of the Real Window
+:Description For Debugging purposes, speaks the class of the Real Window
+
+:script SayPanelItem
+:SearchRank 1
+:Synopsis Speaks the name of the Cover Sheet list panel
+:Description On the Cover Sheet page, speaks the name of the Cover Sheet list
+
+:script ShowUIAInfo
+:SearchRank 1
+:Synopsis For Debugging Purposes, shows the UIA information for the control in focus
+:Description For Debugging Purposes, shows the UIA information for the control in focus
+
+:function GetButtonByAutomationIDEx
+:Returns object No Return Description
+:SearchRank 1
+:Synopsis Gets the UIA information for a button to activate
+:Description Gets the UIA information for a button to activate
+:Param string/sAutomationID No Description
+:Param int/iNumber No Description
+:Param handle/hWindow No Description
+
+:script WalkThroughUIAObjects
+:SearchRank 1

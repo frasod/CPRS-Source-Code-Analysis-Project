@@ -1,0 +1,21 @@
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# CPRS specific
+*.log
+*.tmp
+*.bak
+
+# Configuration overrides (keep template)
+config/vista-connection.local.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store

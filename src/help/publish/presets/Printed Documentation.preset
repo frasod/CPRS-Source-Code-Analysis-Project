@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preset>
+  <content>
+    <index type="boolean">true</index>
+    <toc>
+      <path>../../toc/CPRS.toc</path>
+      <name>CPRS</name>
+    </toc>
+    <glossary>
+      <path>../../glossary/CPRS.glo</path>
+      <name>CPRS</name>
+    </glossary>
+    <generatetoc type="boolean">true</generatetoc>
+    <includereftopics type="boolean">true</includereftopics>
+    <brs type="array"></brs>
+    <mapFiles type="array"></mapFiles>
+    <includeDropdownText type="boolean">false</includeDropdownText>
+    <includeExpandingText type="boolean">false</includeExpandingText>
+  </content>
+  <outputPath>C:/Users/ZZZZZZROBINT/Documents/My RoboHelp Projects/outputs/CPRS Online Help/Printed Documentation</outputPath>
+  <starterPage>CPRS_Online_Help.pdf</starterPage>
+  <pdf>
+    <useEncryption type="boolean">false</useEncryption>
+    <useTopicsAndChaptersForToc type="boolean">true</useTopicsAndChaptersForToc>
+    <embeddFonts type="boolean">true</embeddFonts>
+    <compression type="boolean">false</compression>
+    <toclevel type="number">1</toclevel>
+    <resolution>96</resolution>
+    <useCustomResoultion type="boolean">false</useCustomResoultion>
+    <mergePdfs type="boolean">true</mergePdfs>
+    <showWatermark type="boolean">false</showWatermark>
+    <embedMultimedia type="boolean">false</embedMultimedia>
+    <createTagged type="boolean">false</createTagged>
+    <splitPdf type="boolean">false</splitPdf>
+  </pdf>
+  <search>
+    <context type="boolean">false</context>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+  </search>
+  <sitemap>
+    <use type="boolean">false</use>
+    <changeFrequency></changeFrequency>
+  </sitemap>
+  <name>Printed Documentation</name>
+  <type>pdf</type>
+  <title>CPRS Online Help</title>
+  <lowercasenames type="number">0</lowercasenames>
+  <undefined type="boolean">false</undefined>
+  <template>
+    <path>../templates/Printed Documentation/pdf.tpl</path>
+  </template>
+  <excludeTopicCss type="boolean">true</excludeTopicCss>
+  <metadataNew type="array">
+    <metadataNewitem>
+      <propkey>Title</propkey>
+      <propvalue>CPRS Online Help</propvalue>
+    </metadataNewitem>
+  </metadataNew>
+  <metadataOptions>list</metadataOptions>
+</preset>

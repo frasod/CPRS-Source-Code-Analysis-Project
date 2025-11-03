@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Remote Order Checking</title>
+  <link rel="StyleSheet" href="assets/css/CPRS.css" type="text/css" />
+  <meta name="rh-index-keywords" content="HDR,local data only,Order Checking,RDI,Remote:Remote Data Interoperability,Remote:local data only,Remote:order checks,Health:Health Data Repository or HDR" />
+</head>
+<body>
+  <h1>
+    <font color="#3366FF" size="4" style="font-size: 14pt;">Remote Order Checking</font>
+  </h1>
+  <p style="margin-bottom: 6.00pt;">
+    <font color="#010100" size="2" style="font-size: 12pt;">In addition, with the Remote Data Interoperability (RDI) project, it is now possible to perform a limited number of order checks against remote outpatient pharmacy and allergy information from other Veterans Health Administration (VHA) facilities that is stored in the Health Data Repository (HDR). Another project, the Clinical Health Data Repository (CHDR) will enable remote order checks against allergies and outpatient medication data from Department of Defense (DoD) facility data that is stored in the HDR. The CHDR data only relates to active dual consumers (patients that are seen at both VHA and DoD facilities).</font>
+  </p>
+  <p style="margin-bottom: 6.00pt;">
+    <font color="#010100" size="2" style="font-size: 12pt;">For the selected patient, RDI requests from the HDR all outpatient pharmacy data with an expiration or discontinued date starting 30 days in the past and going forward, including into the future.</font>
+  </p>
+  <p style="margin-top: 3.00pt; margin-bottom: 0.00pt;">
+    <font color="#010100" size="2" style="font-size: 11pt; font-weight: bold;">What Remote Order Checks Are Available?</font>
+  </p>
+  <p style="margin-bottom: 6.00pt;">
+    <font color="#010100" size="2" style="font-size: 12pt;">With RDI and CHDR, the following order checks occur:</font>
+  </p>
+  <p style="margin-left: 36.00pt; margin-bottom: 3.00pt; text-indent: -17.50pt; color: #010100;">·      Allergy Contrast Media Interaction</p>
+  <p style="margin-left: 36.00pt; margin-bottom: 3.00pt; text-indent: -17.50pt; color: #010100;">·      Allergy-Drug Interaction</p>
+  <p style="margin-left: 36.00pt; margin-bottom: 3.00pt; text-indent: -17.50pt; color: #010100;">·      Critical Drug Interaction</p>
+  <p style="margin-left: 36.00pt; margin-bottom: 3.00pt; text-indent: -17.50pt; color: #010100;">·      Duplicate Drug Class Order</p>
+  <p style="margin-left: 36.00pt; margin-bottom: 3.00pt; text-indent: -17.50pt; color: #010100;">·      Duplicate Drug Order</p>
+  <p style="margin-left: 36.00pt; margin-bottom: 3.00pt; text-indent: -17.50pt; color: #010100;">·      Significant Drug Interaction </p>
+  <p style="margin-left: 36.00pt; margin-bottom: 6.00pt;"> </p>
+  <p style="margin-top: 3.00pt; margin-bottom: 0.00pt;">
+    <font color="#010100" size="2" style="font-size: 11pt; font-weight: bold;">Which Items Are NOT Used in Remote Order Checks?</font>
+  </p>
+  <p style="margin-bottom: 6.00pt;">
+    <font color="#010100" size="2" style="font-size: 12pt;">Some items are not used in remote order checking because they are not stored in the HDR. Others have a high annoyance factor and therefore were not included at the request of field sites. The following items are not included in remote order checks:</font>
+  </p>
+  <p style="margin-left: 36.00pt; margin-bottom: 3.00pt; text-indent: -17.50pt; color: #010100;">·      Inpatient Medications</p>
+  <p style="margin-left: 36.00pt; margin-bottom: 3.00pt; text-indent: -17.50pt; color: #010100;">·      Non-VA Meds</p>
+  <p style="margin-left: 36.00pt; margin-bottom: 3.00pt; text-indent: -17.50pt; color: #010100;">·      Supply items</p>
+  <p style="margin-left: 36.00pt; margin-bottom: 3.00pt; text-indent: -17.50pt; color: #010100;">·      Local drugs that are not matched to the National Drug File </p>
+  <p style="margin-left: 72.00pt; margin-bottom: 6.00pt; text-indent: -35.50pt;">
+    <font color="#010100" size="2" style="font-size: 12pt; font-weight: bold;">Note:</font>
+    <font color="#010100" size="2" style="font-size: 12pt;"> </font><span style="text-indent: -17.50pt;"> </span>
+    <font color="#010100" size="2" style="font-size: 12pt;">The HDR-Hx and HDR-IMS contain prescriptions with drugs that are not matched to the National Drug File (NDF). This prescription data should be used in remote order checking for duplicate drug classes. Because the National Drug File is updated regularly, these missing order checks could be resolved whenever the NDF is updated. Some drugs may never be matched, especially drugs used in research.</font>
+  </p>
+  <p style="margin-bottom: 6.00pt;"> </p>
+  <p style="margin-top: 3.00pt; margin-bottom: 0.00pt;">
+    <font color="#010100" size="2" style="font-size: 11pt; font-weight: bold;">Will the Display Change?</font>
+  </p>
+  <p style="margin-bottom: 6.00pt;">
+    <font color="#010100" size="2" style="font-size: 12pt;">With RDI, if there is a problem with an order check, CPRS displays the information to the user potentially in two separate dialogs. The first dialog displays the allergy order checks:</font>
+  </p>
+  <ul>
+    <li>
+      <font style="font-size: 12pt;">It displays the facility name where the allergy was recorded, the reactant, signs, severity, and symptoms.</font>
+    </li>
+    <li>
+      <font style="font-size: 12pt;">For remote allergies, the user is required to give a reason for overriding order checks. The user is also able to write a local comment on a remote facility allergy.</font>
+    </li>
+    <li>
+      <font style="font-size: 12pt;">Allergies are sorted by clinical danger level:</font>
+      <ul>
+        <li>
+          <font style="font-size: 12pt;">In cases where allergy severity and symptoms are identical in one or more order checks, a single consolidated order check will display. The sort order hierarchy is:</font>
+          <ul>
+            <li>
+              <font style="font-size: 12pt;">First by Severity (Highest to Lowest).</font>
+            </li>
+            <li>
+              <font style="font-size: 12pt;">Second by Causative Agent.</font>
+            </li>
+            <li>
+              <font style="font-size: 12pt;">Last by Local and Remote locations.</font>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p> </p>
+  <p>The second dialog displays the following information:</p>
+  <ul>
+    <li>
+      <font style="font-size: 12pt">Medication orders include the last refill date and the quantity.</font>
+    </li>
+    <li>
+      <font style="font-size: 12pt">Remote medication order checks display the facility name where the medication was prescribed. Local medication order checks do not display the facility name.</font>
+    </li>
+  </ul>
+  <figure><img alt="Remote order check displayed with the name of the remote site in the text." src="assets/images/Remote_Order_checking_2022_02_21.gif" />
+    <figcaption>
+      <font style="font-size: 12pt">The screen capture above shows order checks with remote facility names listed.</font>
+    </figcaption>
+  </figure>
+  <p> </p>
+  <figure><img alt="The order check dialog with local infomration only" src="assets/images/order_check_LOCAL_simple_dialog_2022_02_10.gif" style="cursor: nesw-resize;" />
+    <figcaption>
+      <font style="font-size: 12pt;">If CPRS receives no data from the HDR, it will display the message “Remote Order Checking not available – checks done on local data only,” as shown in the screen capture above.</font>
+    </figcaption>
+  </figure>
+  <p style="margin-bottom: 6.00pt;">
+    <font style="font-size: 12pt;">Allergies display the facility name where the allergy was recorded. If there is more than one station, the local station is displayed first.</font>
+  </p>
+  <p> </p>
+  <p style="margin-bottom: 6.00pt;">
+    <font color="#010100" size="2" style="font-size: 12pt;">To ensure that providers have the information they need, CPRS also provides the message “Remote Order Checking not available – checks done on local data only,&quot; as shown above, if CPRS cannot communicate with remote sources. </font>
+  </p>
+  <p> </p>
+  <p style="margin-bottom: 6.00pt;"> </p>
+  <p style="margin-top: 3.00pt; margin-bottom: 0.00pt;">
+    <font color="#010100" size="2" style="font-size: 11pt; font-weight: bold;">How Is RDI Remote Order Checking Enabled?</font>
+  </p>
+  <p style="margin-bottom: 6.00pt;">
+    <font color="#010100" size="2" style="font-size: 12pt;">To use remote order checking, your site must enable a parameter to access HDR data. This parameter is set for the entire facility.</font>
+  </p>
+  <p style="margin-top: 3.00pt; margin-bottom: 0.00pt;">
+    <font color="#010100" size="2" style="font-size: 11pt; font-weight: bold;">When Does CPRS Get Remote Data?</font>
+  </p>
+  <p style="margin-bottom: 6.00pt;">
+    <font color="#010100" size="2" style="font-size: 12pt;">Order checks from CPRS can happen several times during a CPRS ordering session:</font>
+  </p>
+  <ul>
+    <li>
+      <font style="font-size: 12pt">Beginning to write/copy/change orders -</font>  <font color="#010100" style="font-size: 12pt">When a user selects an order menu to begin writing orders, CPRS requests some order checks, such as polypharmacy, renal function, or creatinine clearance, for example.</font>
+    </li>
+    <li>
+      <font style="font-size: 12pt">On order acceptance</font>  - <font color="#010100" style="font-size: 12pt">When the user selects Accept, CPRS requests the order checks.</font>
+    </li>
+    <li>
+      <font style="font-size: 12pt">Signature of orders - When a user signs the order, CPRS requests order checks.</font>
+    </li>
+  </ul>
+  <p style="margin-bottom: 6.00pt;"> </p>
+  <p style="margin-top: 3.00pt; margin-bottom: 0.00pt;">
+    <font color="#010100" size="2" style="font-size: 11pt; font-weight: bold;">How Long Is the Data Used?</font>
+  </p>
+  <p style="margin-bottom: 6.00pt; color: #010100;">A parameter that sites can set controls how long HDR data is stored locally and is considered &quot;fresh&quot; and can be used for order checks before the data will be retrieved again from the HDR. The default time for this parameter is 120 minutes or two hours, but each site can change the time in that parameter.</p>
+  <p style="margin-bottom: 6.00pt;"> </p>
+  <p style="margin-top: 6.00pt; margin-bottom: 0.00pt; border-bottom: 0.75pt solid #000000;">
+    <font color="#010100" size="2" style="font-size: 10pt; font-weight: bold;">Related topics</font>
+  </p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Order_Checking.htm">Order Checking Overview</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Site_Defined_Clinical_Reminder_Order_Checks.htm">Site-Defined Clinical Reminder Order Checks</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Order_Checking_Local.htm">Order Checking Local</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Ordering_a_Diet_(Diet_Tab).htm">Ordering a Diet</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Ordering_Inpatient_Medications.htm">Ordering Inpatient Medications (Simple Dose)</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Ordering_Inpatient_Medications_Complex_Dose_.htm">Ordering Inpatient Medications (Complex Dose)</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Ordering_Outpatient_Medications_(Simple_Dose).htm">Ordering Outpatient Medications (Simple Dose)</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Ordering_Outpatient_Medications_(Complex_Dose).htm">Ordering Outpatient Medications (Complex Dose)</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Ordering_Infusions.htm">Ordering IV Fluids</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Ordering_Lab_Tests.htm">Ordering Lab Tests</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Ordering_Imaging_Radiology.htm">Ordering Radiology and Imaging Procedures</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Ordering_Consults.htm">Ordering a Consult</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Ordering_Vitals.htm">Ordering Vitals</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Text_Orders.htm">Text Only Orders</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"><a href="Event_Delayed_Orders.htm">Event-Delayed Orders</a></p>
+  <p style="margin-left: 18.00pt; margin-top: 4.00pt; margin-bottom: 3.00pt;"> </p>
+</body>
+</html>
