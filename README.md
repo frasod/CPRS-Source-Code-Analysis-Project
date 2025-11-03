@@ -326,14 +326,21 @@ Main clinical tabs:
 - **MDI interface** - Outdated, not web-compatible
 - **Delphi VCL** - Platform lock-in, no mobile support
 - **No API gateway** - Direct RPC calls, no caching/load balancing
-- **MUMPS backend** - Limited scalability, hard to maintain
+
+### What's Underrated ⭐
+- **MUMPS/YottaDB** - Despite reputation, VistA's database (now open-source YottaDB) has proven exceptionally reliable
+  - **Zero data loss** - Legendary ACID compliance and crash recovery
+  - **High performance** - Handles massive transaction volumes at VA scale
+  - **Battle-tested** - 40+ years in production healthcare environments
+  - **Modern implementation** - YottaDB (GPL) continues active development
+  - Note: Not "bad," just different - hierarchical NoSQL predating modern databases
 
 ### Modern Improvements 🚀
 - **REST/GraphQL APIs** - Standard protocols, language-agnostic
 - **Async/await** - Non-blocking operations
 - **React SPA** - Modern, responsive, mobile-ready
 - **Microservices** - Scalable, maintainable, cloud-native
-- **PostgreSQL** - Standard SQL, mature ecosystem
+- **PostgreSQL or YottaDB** - Choose SQL (familiarity) or keep YottaDB (proven reliability)
 - **AI integration** - Clinical decision support, automation
 
 ---
